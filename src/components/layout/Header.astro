@@ -1,0 +1,115 @@
+---
+import { menuLinks } from "@/site-config";
+
+import Search from "../Search.astro";
+import ThemeToggle from "../ThemeToggle.astro";
+
+const url = new URL(Astro.request.url);
+---
+
+<header class="group relative mb-28 flex items-center sm:ps-[4.5rem]" id="main-header">
+	<div class="flex sm:flex-col">
+		<a
+			aria-current={url.pathname === "/" ? "page" : false}
+			class="inline-flex items-center grayscale hover:filter-none sm:relative sm:inline-block"
+			href="/"
+		>
+			<svg
+				aria-hidden="true"
+				class="me-3 h-10 w-6 sm:absolute sm:start-[-4.5rem] sm:me-0 sm:h-20 sm:w-12"
+				fill="none"
+				focusable="false"
+				viewBox="0 0 272 480"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<title>Logo</title>
+			<defs><linearGradient id="rrreflection-grad" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="45%" stop-color="hsl(185, 53%, 55%)" stop-opacity="1"></stop><stop offset="100%" stop-color="hsl(0, 73%, 55%)" stop-opacity="1"></stop></linearGradient><linearGradient id="rrreflection-grad-2" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="hsl(0, 73%, 55%)" stop-opacity="1"></stop><stop offset="45%" stop-color="hsl(185, 53%, 55%)" stop-opacity="1"></stop></linearGradient><linearGradient gradientTransform="rotate(270)" id="rrreflection-grad-3" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="45%" stop-color="hsl(185, 53%, 55%)" stop-opacity="1"></stop><stop offset="100%" stop-color="hsl(0, 73%, 55%)" stop-opacity="1"></stop></linearGradient><linearGradient gradientTransform="rotate(270)" id="rrreflection-grad-4" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="hsl(0, 73%, 55%)" stop-opacity="1"></stop><stop offset="45%" stop-color="hsl(185, 53%, 55%)" stop-opacity="1"></stop></linearGradient></defs><g fill="none" stroke="url(#rrreflection-grad)" stroke-width="2"><circle cx="50%" cy="0" r="375"></circle><circle cx="50%" cy="0" r="362.5"></circle><circle cx="50%" cy="0" r="350"></circle><circle cx="50%" cy="0" r="337.5"></circle><circle cx="50%" cy="0" r="325"></circle><circle cx="50%" cy="0" r="312.5"></circle><circle cx="50%" cy="0" r="300"></circle><circle cx="50%" cy="0" r="287.5"></circle><circle cx="50%" cy="0" r="275"></circle><circle cx="50%" cy="0" r="262.5"></circle><circle cx="50%" cy="0" r="250"></circle><circle cx="50%" cy="0" r="237.5"></circle><circle cx="50%" cy="0" r="225"></circle><circle cx="50%" cy="0" r="212.5"></circle><circle cx="50%" cy="0" r="200"></circle><circle cx="50%" cy="0" r="187.5"></circle><circle cx="50%" cy="0" r="175"></circle><circle cx="50%" cy="0" r="162.5"></circle><circle cx="50%" cy="0" r="150"></circle><circle cx="50%" cy="0" r="137.5"></circle><circle cx="50%" cy="0" r="125"></circle><circle cx="50%" cy="0" r="112.5"></circle><circle cx="50%" cy="0" r="100"></circle><circle cx="50%" cy="0" r="87.5"></circle><circle cx="50%" cy="0" r="75"></circle><circle cx="50%" cy="0" r="62.5"></circle><circle cx="50%" cy="0" r="50"></circle><circle cx="50%" cy="0" r="37.5"></circle><circle cx="50%" cy="0" r="25"></circle><circle cx="50%" cy="0" r="12.5"></circle></g><g fill="none" stroke="url(#rrreflection-grad-2)" stroke-width="2"><circle cx="50%" cy="100%" r="375"></circle><circle cx="50%" cy="100%" r="362.5"></circle><circle cx="50%" cy="100%" r="350"></circle><circle cx="50%" cy="100%" r="337.5"></circle><circle cx="50%" cy="100%" r="325"></circle><circle cx="50%" cy="100%" r="312.5"></circle><circle cx="50%" cy="100%" r="300"></circle><circle cx="50%" cy="100%" r="287.5"></circle><circle cx="50%" cy="100%" r="275"></circle><circle cx="50%" cy="100%" r="262.5"></circle><circle cx="50%" cy="100%" r="250"></circle><circle cx="50%" cy="100%" r="237.5"></circle><circle cx="50%" cy="100%" r="225"></circle><circle cx="50%" cy="100%" r="212.5"></circle><circle cx="50%" cy="100%" r="200"></circle><circle cx="50%" cy="100%" r="187.5"></circle><circle cx="50%" cy="100%" r="175"></circle><circle cx="50%" cy="100%" r="162.5"></circle><circle cx="50%" cy="100%" r="150"></circle><circle cx="50%" cy="100%" r="137.5"></circle><circle cx="50%" cy="100%" r="125"></circle><circle cx="50%" cy="100%" r="112.5"></circle><circle cx="50%" cy="100%" r="100"></circle><circle cx="50%" cy="100%" r="87.5"></circle><circle cx="50%" cy="100%" r="75"></circle><circle cx="50%" cy="100%" r="62.5"></circle><circle cx="50%" cy="100%" r="50"></circle><circle cx="50%" cy="100%" r="37.5"></circle><circle cx="50%" cy="100%" r="25"></circle><circle cx="50%" cy="100%" r="12.5"></circle></g><g fill="none" stroke="url(#rrreflection-grad-3)" stroke-width="2"><circle cx="0" cy="50%" r="375"></circle><circle cx="0" cy="50%" r="362.5"></circle><circle cx="0" cy="50%" r="350"></circle><circle cx="0" cy="50%" r="337.5"></circle><circle cx="0" cy="50%" r="325"></circle><circle cx="0" cy="50%" r="312.5"></circle><circle cx="0" cy="50%" r="300"></circle><circle cx="0" cy="50%" r="287.5"></circle><circle cx="0" cy="50%" r="275"></circle><circle cx="0" cy="50%" r="262.5"></circle><circle cx="0" cy="50%" r="250"></circle><circle cx="0" cy="50%" r="237.5"></circle><circle cx="0" cy="50%" r="225"></circle><circle cx="0" cy="50%" r="212.5"></circle><circle cx="0" cy="50%" r="200"></circle><circle cx="0" cy="50%" r="187.5"></circle><circle cx="0" cy="50%" r="175"></circle><circle cx="0" cy="50%" r="162.5"></circle><circle cx="0" cy="50%" r="150"></circle><circle cx="0" cy="50%" r="137.5"></circle><circle cx="0" cy="50%" r="125"></circle><circle cx="0" cy="50%" r="112.5"></circle><circle cx="0" cy="50%" r="100"></circle><circle cx="0" cy="50%" r="87.5"></circle><circle cx="0" cy="50%" r="75"></circle><circle cx="0" cy="50%" r="62.5"></circle><circle cx="0" cy="50%" r="50"></circle><circle cx="0" cy="50%" r="37.5"></circle><circle cx="0" cy="50%" r="25"></circle><circle cx="0" cy="50%" r="12.5"></circle></g><g fill="none" stroke="url(#rrreflection-grad-4)" stroke-width="2"><circle cx="100%" cy="50%" r="375"></circle><circle cx="100%" cy="50%" r="362.5"></circle><circle cx="100%" cy="50%" r="350"></circle><circle cx="100%" cy="50%" r="337.5"></circle><circle cx="100%" cy="50%" r="325"></circle><circle cx="100%" cy="50%" r="312.5"></circle><circle cx="100%" cy="50%" r="300"></circle><circle cx="100%" cy="50%" r="287.5"></circle><circle cx="100%" cy="50%" r="275"></circle><circle cx="100%" cy="50%" r="262.5"></circle><circle cx="100%" cy="50%" r="250"></circle><circle cx="100%" cy="50%" r="237.5"></circle><circle cx="100%" cy="50%" r="225"></circle><circle cx="100%" cy="50%" r="212.5"></circle><circle cx="100%" cy="50%" r="200"></circle><circle cx="100%" cy="50%" r="187.5"></circle><circle cx="100%" cy="50%" r="175"></circle><circle cx="100%" cy="50%" r="162.5"></circle><circle cx="100%" cy="50%" r="150"></circle><circle cx="100%" cy="50%" r="137.5"></circle><circle cx="100%" cy="50%" r="125"></circle><circle cx="100%" cy="50%" r="112.5"></circle><circle cx="100%" cy="50%" r="100"></circle><circle cx="100%" cy="50%" r="87.5"></circle><circle cx="100%" cy="50%" r="75"></circle><circle cx="100%" cy="50%" r="62.5"></circle><circle cx="100%" cy="50%" r="50"></circle><circle cx="100%" cy="50%" r="37.5"></circle><circle cx="100%" cy="50%" r="25"></circle><circle cx="100%" cy="50%" r="12.5"></circle></g></svg>			<span class="text-xl font-bold sm:text-2xl">0xHashbrown</span>
+		</a>
+		<nav
+			aria-label="Main menu"
+			class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-bgColor/[.85] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:-ms-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-dashed sm:divide-accent sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none"
+			id="navigation-menu"
+		>
+			{
+				menuLinks.map((link) => (
+					<a
+						aria-current={url.pathname === link.path ? "page" : false}
+						class="px-4 py-4 underline-offset-2 sm:py-0 sm:hover:underline"
+						data-astro-prefetch
+						href={link.path}
+					>
+						{link.title}
+					</a>
+				))
+			}
+		</nav>
+	</div>
+	<Search />
+	<ThemeToggle />
+	<mobile-button>
+		<button
+			aria-expanded="false"
+			aria-haspopup="menu"
+			aria-label="Open main menu"
+			class="group relative ms-4 h-7 w-7 sm:invisible sm:hidden"
+			id="toggle-navigation-menu"
+			type="button"
+		>
+			<svg
+				aria-hidden="true"
+				class="absolute start-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 transition-all group-aria-expanded:scale-0 group-aria-expanded:opacity-0"
+				fill="none"
+				focusable="false"
+				id="line-svg"
+				stroke="currentColor"
+				stroke-width="1.5"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path d="M3.75 9h16.5m-16.5 6.75h16.5" stroke-linecap="round" stroke-linejoin="round"
+				></path>
+			</svg>
+			<svg
+				aria-hidden="true"
+				class="absolute start-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 scale-0 text-accent opacity-0 transition-all group-aria-expanded:scale-100 group-aria-expanded:opacity-100"
+				class="text-accent"
+				fill="none"
+				focusable="false"
+				id="cross-svg"
+				stroke="currentColor"
+				stroke-width="1.5"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
+			</svg>
+		</button>
+	</mobile-button>
+</header>
+
+<script>
+	import { toggleClass } from "@/utils";
+
+	class MobileNavBtn extends HTMLElement {
+		private headerEl: HTMLElement;
+		private menuOpen: boolean;
+		private mobileButtonEl: HTMLButtonElement;
+
+		toggleMobileMenu = () => {
+			toggleClass(this.headerEl, "menu-open");
+			this.menuOpen = !this.menuOpen;
+			this.mobileButtonEl.setAttribute("aria-expanded", this.menuOpen.toString());
+		};
+
+		constructor() {
+			super();
+			this.headerEl = document.getElementById("main-header")!;
+			this.mobileButtonEl = this.querySelector("button") as HTMLButtonElement;
+			this.menuOpen = false;
+
+			this.mobileButtonEl.addEventListener("click", this.toggleMobileMenu);
+		}
+	}
+
+	customElements.define("mobile-button", MobileNavBtn);
+</script>
