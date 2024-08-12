@@ -39,14 +39,14 @@ const { headings } = await project.render();
       <>
         <meta content="Back" property="of:button:1" />
         <meta content="link" property="of:button:1:action" />
-        <meta content={prevProject.url} property="of:button:1:target" />
+        <meta content={`/projects/${prevProject.slug}/`} property="of:button:1:target" />
       </>
     )}
     {nextProject && (
       <>
         <meta content="Forward" property="of:button:2" />
         <meta content="link" property="of:button:2:action" />
-        <meta content={nextProject.url} property="of:button:2:target" />
+        <meta content={`/projects/${nextProject.slug}/`} property="of:button:2:target" />
       </>
     )}
     <meta content="Link" property="of:button:3" />
