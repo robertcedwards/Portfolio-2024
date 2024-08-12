@@ -64,21 +64,25 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 {/* Open Frames Metadata */}
 <meta content="vNext" property="of:version" />
 <meta content="1.0" property="of:accepts:anonymous" />
+<meta content={socialImageURL} property="twitter:image" />
+
+<meta content={socialImageURL} property="fc:frame:image" />
+
 {prevUrl && (
   <>
-    <meta content=" 🎩 Warpcast" property="fc:frame:button:1" />
+    <meta content="⬅️" property="fc:frame:button:1" />
     <meta content="link" property="fc:frame:button:1:action" />
     <meta content={prevUrl} property="fc:frame:button:1:target" />
   </>
 )}
 {nextUrl && (
   <>
-    <meta content=" 🫠 Web3 Bio" property="fc:frame:button:2" />
+    <meta content="➡️" property="fc:frame:button:2" />
     <meta content="link" property="fc:frame:button:2:action" />
     <meta content={nextUrl} property="fc:frame:button:2:target" />
   </>
 )}
-<meta content=" ☝️ Template" property="fc:frame:button:3" />
+<meta content=" ☝️ Link" property="fc:frame:button:3" />
 <meta content="link" property="fc:frame:button:3:action" />
 <meta content={Astro.url.href} property="fc:frame:button:3:target" />
 
