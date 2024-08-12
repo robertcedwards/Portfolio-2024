@@ -2,6 +2,7 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
+import embeds from 'astro-embed/integration';
 import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import fs from "fs";
@@ -24,6 +25,7 @@ export default defineConfig({
 			nesting: true,
 		}),
 		sitemap(),
+		embeds(),
 		mdx(),
 	],
 	markdown: {
