@@ -24,7 +24,9 @@ export interface PaginationLink {
 export interface SiteMeta {
 	articleDate?: string | undefined;
 	description?: string;
+	nextUrl?: string;  // Add this line
 	ogImage?: string | undefined;
+	prevUrl?: string;  // Add this line
 	title: string;
 }
 
