@@ -27,8 +27,7 @@ The website, Madrone Mountain Coffee, reflects our commitment to quality and com
 - Key Point 3
 
 ## Additional Links
-- [Link 1](#)
-- [Link 2](#)
+- [Madrone Mountain Coffee Website](https://madrone.coffee)
 
 ## Tags
-[[article]], [[lynxify]]
+[[project]], [[madrone]], [[product]]

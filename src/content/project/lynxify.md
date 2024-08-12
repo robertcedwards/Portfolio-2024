@@ -12,7 +12,6 @@ draft: false
 
 ## Summary
 Summary for Lynxify.
-
 ## Key Points
 - Key Point 1
 - Key Point 2

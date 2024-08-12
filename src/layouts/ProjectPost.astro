@@ -4,6 +4,7 @@ import type { CollectionEntry } from "astro:content";
 import BlogHero from "@/components/blog/Hero.astro";
 import TOC from "@/components/blog/TOC.astro";
 import WebMentions from "@/components/blog/webmentions/index.astro";
+import { getAllProjects, sortProjectsByDate } from "@/data/post";
 
 import BaseLayout from "./Base.astro";
 
@@ -12,6 +13,14 @@ interface Props {
 }
 
 const { project } = Astro.props;
+
+// Fetch all projects to determine next and previous
+const allProjects = await getAllProjects();
+const sortedProjects = sortProjectsByDate(allProjects);
+const currentIndex = sortedProjects.findIndex(p => p.slug === project.slug);
+const prevProject = sortedProjects[currentIndex - 1];
+const nextProject = sortedProjects[currentIndex + 1];
+
 const {
   data: { description, ogImage, publishDate, title, updatedDate },
   slug,
@@ -22,6 +31,28 @@ const { headings } = await project.render();
 ---
 
 <BaseLayout meta={{ articleDate, description, ogImage: socialImage, title }}>
+  <head>
+    <!-- Open Frames Metadata -->
+    <meta content="vNext" property="of:version" />
+    <meta content="1.0" property="of:accepts:anonymous" />
+    {prevProject && (
+      <>
+        <meta content="Back" property="of:button:1" />
+        <meta content="link" property="of:button:1:action" />
+        <meta content={prevProject.url} property="of:button:1:target" />
+      </>
+    )}
+    {nextProject && (
+      <>
+        <meta content="Forward" property="of:button:2" />
+        <meta content="link" property="of:button:2:action" />
+        <meta content={nextProject.url} property="of:button:2:target" />
+      </>
+    )}
+    <meta content="Link" property="of:button:3" />
+    <meta content="link" property="of:button:3:action" />
+    <meta content={Astro.url.href} property="of:button:3:target" />
+  </head>
   <div class="gap-x-10 lg:flex lg:items-start">
     {!!headings.length && <TOC headings={headings} />}
     <article class="flex-grow break-words" data-pagefind-body>
