@@ -30,7 +30,7 @@ const articleDate = updatedDate?.toISOString() ?? publishDate.toISOString();
 const { headings } = await project.render();
 ---
 
-<BaseLayout meta={{ articleDate, description, ogImage: socialImage, title }}>
+<BaseLayout meta={{ articleDate, description, nextUrl: nextProject?.slug, ogImage: socialImage, prevUrl: prevProject?.slug, title }}>
   <head>
     <!-- Open Frames Metadata -->
     <meta content="vNext" property="of:version" />

@@ -70,6 +70,8 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 <meta content="2024-02-01" name="of:accepts:xmtp" />
 <meta content={socialImageURL} property="fc:frame:image" />
 
+{console.log('prevUrl:', prevUrl)}
+{console.log('nextUrl:', nextUrl)}
 {prevUrl && (
   <>
     <meta content="⬅️" property="fc:frame:button:1" />
