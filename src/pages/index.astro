@@ -8,28 +8,6 @@ const allPosts = await getAllPosts();
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 const allProjects = await getAllProjects();
 
-const cactusTech: { desc: string; href: string; title: string }[] = [
-	{
-		desc: "Build fast websites, faster.",
-		href: "https://astro.build",
-		title: "Astro",
-	},
-	{
-		desc: "Rapidly build modern websites without ever leaving your HTML.",
-		href: "https://tailwindcss.com",
-		title: "Tailwind CSS",
-	},
-	{
-		desc: "Simple and easy-to-use markup language.",
-		href: "https://www.markdownguide.org/",
-		title: "Markdown",
-	},
-	{
-		desc: "Markdown for the component era.",
-		href: "https://mdxjs.com/",
-		title: "MDX",
-	}
-];
 ---
 
 <PageLayout meta={{ title: "Home" }}>
@@ -41,7 +19,7 @@ const cactusTech: { desc: string; href: string; title: string }[] = [
 		<SocialList />
 	</section>
 
-	<section aria-label="Project list" class="mt-16">
+	<section aria-label="Project list" class="mt-8">
 		<h2 class="title mb-4 text-xl">Projects</h2>
 		<ul class="space-y-4">
 			{
@@ -54,7 +32,7 @@ const cactusTech: { desc: string; href: string; title: string }[] = [
 		</ul>
 	</section>
 
-	<section aria-label="Blog post list" class="mt-16">
+	<section aria-label="Blog post list" class="mt-8">
 		<h2 class="title mb-4 text-xl">Posts</h2>
 		<ul class="space-y-4">
 			{
