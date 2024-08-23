@@ -13,7 +13,9 @@ const titleSeparator = "•";
 const siteTitle = `${title} ${titleSeparator} ${siteConfig.title}`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url).href;
-const nextUrlFull = new URL(Astro.site + prevUrl);
+const prevUrlFull = prevUrl ? new URL(Astro.site + prevUrl) : undefined;
+const nextUrlFull = nextUrl ? new URL(Astro.site + nextUrl) : undefined;
+
 ---
 
 <meta charset="utf-8" />
@@ -25,7 +27,7 @@ const nextUrlFull = new URL(Astro.site + prevUrl);
 <link href="/favicon.ico" rel="icon" sizes="any" />
 <link href="/icon.svg" rel="icon" type="image/svg+xml" />
 <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
-<link href="/manifest.webmanifest" rel="manifest" />
+<link href="/manifest.json" rel="manifest" />
 <link href={canonicalURL} rel="canonical" />
 
 {/* Primary Meta Tags */}
@@ -67,20 +69,19 @@ const nextUrlFull = new URL(Astro.site + prevUrl);
 <meta content="2024-02-01" name="of:accepts:xmtp" />
 <meta content={socialImageURL} property="fc:frame:image" />
 
-{console.log('prevUrl:', prevUrl)}
-{console.log('nextUrl:', nextUrl)}
+
 {prevUrl && (
   <>
     <meta content="⬅️" property="fc:frame:button:1" />
     <meta content="link" property="fc:frame:button:1:action" />
-    <meta content={nextUrlFull} property="fc:frame:button:1:target" />
+    <meta content={prevUrlFull} property="fc:frame:button:1:target" />
   </>
 )}
 {nextUrl && (
   <>
     <meta content="➡️" property="fc:frame:button:2" />
     <meta content="link" property="fc:frame:button:2:action" />
-    <meta content={nextUrl} property="fc:frame:button:2:target" />
+    <meta content={nextUrlFull} property="fc:frame:button:2:target" />
   </>
 )}
 <meta content=" ☝️ Link" property="fc:frame:button:3" />
