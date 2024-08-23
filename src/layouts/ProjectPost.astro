@@ -31,7 +31,7 @@ const { headings } = await project.render();
 ---
 
 <BaseLayout meta={{ articleDate, description, nextUrl: nextProject?.slug, ogImage: socialImage, prevUrl: prevProject?.slug, title }}>
-  <head>
+  <slot name="head">
     <!-- Open Frames Metadata -->
     <meta content="vNext" property="of:version" />
     <meta content="1.0" property="of:accepts:anonymous" />
@@ -52,7 +52,7 @@ const { headings } = await project.render();
     <meta content="Link" property="of:button:3" />
     <meta content="link" property="of:button:3:action" />
     <meta content={Astro.url.href} property="of:button:3:target" />
-  </head>
+  </slot>
   <div class="gap-x-10 lg:flex lg:items-start">
     {!!headings.length && <TOC headings={headings} />}
     <article class="flex-grow break-words" data-pagefind-body>

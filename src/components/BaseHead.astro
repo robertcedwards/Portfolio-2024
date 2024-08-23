@@ -13,6 +13,7 @@ const titleSeparator = "•";
 const siteTitle = `${title} ${titleSeparator} ${siteConfig.title}`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url).href;
+const nextUrlFull = new URL(Astro.site + prevUrl);
 ---
 
 <meta charset="utf-8" />
@@ -72,7 +73,7 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
   <>
     <meta content="⬅️" property="fc:frame:button:1" />
     <meta content="link" property="fc:frame:button:1:action" />
-    <meta content={prevUrl} property="fc:frame:button:1:target" />
+    <meta content={nextUrlFull} property="fc:frame:button:1:target" />
   </>
 )}
 {nextUrl && (

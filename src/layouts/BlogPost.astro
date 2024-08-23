@@ -1,10 +1,10 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import { getAllPosts, sortMDByDate } from "@/data/post";
 
 import BlogHero from "@/components/blog/Hero.astro";
 import TOC from "@/components/blog/TOC.astro";
 import WebMentions from "@/components/blog/webmentions/index.astro";
+import { getAllPosts, sortMDByDate } from "@/data/post";
 
 import BaseLayout from "./Base.astro";
 
@@ -32,7 +32,7 @@ const prevUrl = prevPost ? `/posts/${prevPost.slug}/` : undefined;
 const nextUrl = nextPost ? `/posts/${nextPost.slug}/` : undefined;
 ---
 
-<BaseLayout meta={{ articleDate, description, ogImage: socialImage, title, prevUrl, nextUrl }}>
+<BaseLayout meta={{ articleDate, description,nextUrl, ogImage: socialImage,  prevUrl, title, }}>
 	<div class="gap-x-10 lg:flex lg:items-start">
 		{!!headings.length && <TOC headings={headings} />}
 		<article class="flex-grow break-words" data-pagefind-body>
