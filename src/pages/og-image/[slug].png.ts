@@ -2,7 +2,7 @@ import type { APIContext, InferGetStaticPropsType } from "astro";
 
 import RobotoMonoBold from "@/assets/roboto-mono-700.ttf";
 import RobotoMono from "@/assets/roboto-mono-regular.ttf";
-import { getAllPosts } from "@/data/post";
+import { getAllPosts, getAllProjects } from "@/data/post";
 import { siteConfig } from "@/site-config";
 import { getFormattedDate } from "@/utils";
 import { Resvg } from "@resvg/resvg-js";
@@ -63,11 +63,11 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 export async function GET(context: APIContext) {
 	const { pubDate, title } = context.props as Props;
 
-	const postDate = getFormattedDate(pubDate, {
+	const projectDate = getFormattedDate(pubDate, {
 		month: "long",
 		weekday: "long",
 	});
-	const svg = await satori(markup(title, postDate), ogOptions);
+	const svg = await satori(markup(title, projectDate), ogOptions);
 	const png = new Resvg(svg).render().asPng();
 	return new Response(png, {
 		headers: {
@@ -78,14 +78,15 @@ export async function GET(context: APIContext) {
 }
 
 export async function getStaticPaths() {
-	const posts = await getAllPosts();
-	return posts
+	const projects = await getAllProjects();
+	return projects
 		.filter(({ data }) => !data.ogImage)
-		.map((post) => ({
-			params: { slug: post.slug },
+		.map((project) => ({
+			params: { slug: project.slug },
 			props: {
-				pubDate: post.data.updatedDate ?? post.data.publishDate,
-				title: post.data.title,
+				pubDate: project.data.updatedDate ?? project.data.publishDate,
+				title: project.data.title,
 			},
 		}));
+
 }
