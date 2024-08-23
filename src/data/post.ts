@@ -30,6 +30,9 @@ export function sortMDByDate(posts: CollectionEntry<"post">[]) {
 export function groupPostsByYear(posts: CollectionEntry<"post">[]) {
 	return posts.reduce<Record<string, CollectionEntry<"post">[]>>((acc, post) => {
 		const year = getPostSortDate(post).getFullYear();
+		if (!acc[year]) acc[year] = []; 
+		
+		// Initialize the year key if it doesn't exist
 		acc[year].push(post);
 		return acc;
 	}, {});
@@ -87,6 +90,7 @@ export function sortProjectsByDate(projects: CollectionEntry<"project">[]) {
 export function groupProjectsByYear(projects: CollectionEntry<"project">[]) {
 	return projects.reduce<Record<string, CollectionEntry<"project">[]>>((acc, project) => {
 		const year = getProjectSortDate(project).getFullYear();
+		if (!acc[year]) acc[year] = []; // Initialize the year key if it doesn't exist
 		acc[year].push(project);
 		return acc;
 	}, {});
