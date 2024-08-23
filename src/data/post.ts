@@ -30,9 +30,6 @@ export function sortMDByDate(posts: CollectionEntry<"post">[]) {
 export function groupPostsByYear(posts: CollectionEntry<"post">[]) {
 	return posts.reduce<Record<string, CollectionEntry<"post">[]>>((acc, post) => {
 		const year = getPostSortDate(post).getFullYear();
-		if (!acc[year]) {
-			acc[year] = [];
-		}
 		acc[year].push(post);
 		return acc;
 	}, {});
@@ -90,16 +87,13 @@ export function sortProjectsByDate(projects: CollectionEntry<"project">[]) {
 export function groupProjectsByYear(projects: CollectionEntry<"project">[]) {
 	return projects.reduce<Record<string, CollectionEntry<"project">[]>>((acc, project) => {
 		const year = getProjectSortDate(project).getFullYear();
-		if (!acc[year]) {
-			acc[year] = [];
-		}
 		acc[year].push(project);
 		return acc;
 	}, {});
 }
 
 export function getAllProjectTags(projects: CollectionEntry<"project">[]): string[] {
-	return projects.flatMap((project) => project.data.tags as string[]);
+	return projects.flatMap((project) => project.data.tags);
 }
 
 export function getUniqueProjectTags(projects: CollectionEntry<"project">[]): string[] {

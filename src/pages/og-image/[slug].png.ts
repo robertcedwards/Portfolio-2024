@@ -2,7 +2,7 @@ import type { APIContext, InferGetStaticPropsType } from "astro";
 
 import RobotoMonoBold from "@/assets/roboto-mono-700.ttf";
 import RobotoMono from "@/assets/roboto-mono-regular.ttf";
-import { getAllPosts, getAllProjects } from "@/data/post";
+import { getAllProjects } from "@/data/post";
 import { siteConfig } from "@/site-config";
 import { getFormattedDate } from "@/utils";
 import { Resvg } from "@resvg/resvg-js";
@@ -90,3 +90,4 @@ export async function getStaticPaths() {
 		}));
 
 }
+
