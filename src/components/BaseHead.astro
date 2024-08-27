@@ -69,21 +69,14 @@ const nextUrlFull = nextUrl ? new URL(Astro.site + "projects/" + nextUrl) : unde
 <meta content="2024-02-01" name="of:accepts:xmtp" />
 <meta content={socialImageURL} property="fc:frame:image" />
 
+<meta content={prevUrl} property="fc:frame:button:1" />
+<meta content="link" property="fc:frame:button:1:action" />
+<meta content={prevUrlFull} property="fc:frame:button:1:target" />
 
-{prevUrl && (
-  <>
-    <meta content={prevUrl} property="fc:frame:button:1" />
-    <meta content="link" property="fc:frame:button:1:action" />
-    <meta content={prevUrlFull} property="fc:frame:button:1:target" />
-  </>
-)}
-{nextUrl && (
-  <>
-    <meta content={nextUrl} property="fc:frame:button:2" />
-    <meta content="link" property="fc:frame:button:2:action" />
-    <meta content={nextUrlFull} property="fc:frame:button:2:target" />
-  </>
-)}
+<meta content={nextUrl} property="fc:frame:button:2" />
+<meta content="link" property="fc:frame:button:2:action" />
+<meta content={nextUrlFull} property="fc:frame:button:2:target" />
+
 <meta content=" ☝️ Link" property="fc:frame:button:3" />
 <meta content="link" property="fc:frame:button:3:action" />
 <meta content={Astro.url.href} property="fc:frame:button:3:target" />
