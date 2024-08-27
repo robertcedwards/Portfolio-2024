@@ -1,46 +1,147 @@
 ---
-import aboutImg from "@/assets/about-astro.png";
 import PageLayout from "@/layouts/Base.astro";
-import { Image } from "astro:assets";
 const meta = {
-	description: "I'm a starter theme for Astro.build",
-	title: "About",
+    description: "I'm a starter theme for Astro.build",
+    title: "About",
 };
 ---
 
 <PageLayout meta={meta}>
-	<div class="space-y-6">
-		<h1 class="title">About</h1>
-		<p>
-			Hi, I'm a starter Astro. I'm particularly great for getting you started with your own blogging
-			website.
-		</p>
-		<div class="flex justify-center">
-			<Image
-				alt="A cartoon cactus looking at the 'Astro.build' logo"
-				fetchpriority="high"
-				loading="eager"
-				src={aboutImg}
-			/>
-		</div>
-		<p>Here are my some of my awesome built in features:</p>
-		<ul class="list-inside list-disc">
-			<li>I'm ultra fast as I'm a static site</li>
-			<li>I'm fully responsive</li>
-			<li>I come with a light and dark mode</li>
-			<li>I'm easy to customise and add additional content</li>
-			<li>I have Tailwind CSS styling</li>
-			<li>Shiki code syntax highlighting</li>
-			<li>Satori for auto generating OG images for blog posts</li>
-		</ul>
-		<p>
-			Clone or fork my <a
-				aria-label="github repository"
-				class="cactus-link inline-block px-4 py-4 underline-offset-2 sm:py-3 sm:hover:underline"
-				href="https://github.com/chrismwilliams/astro-cactus"
-				rel="noopener noreferrer"
-				target="_blank">repo</a
-			> if you like me!
-		</p>
-	</div>
+    <div class="max-w-4xl mx-auto py-12 px-6">
+        <header class="mb-12">
+            <h1 class="text-4xl font-bold text-primary-600 dark:text-primary-400">About Me</h1>
+            <p class="mt-4 text-lg">
+                Hi, I'm <strong>Robert C. Edwards</strong>, a Full Stack Systems Builder, Community Leader, and Marketing Strategist with over 15 years of experience in developing innovative solutions across Web3, decentralized platforms, and creative technologies.
+            </p>
+            <div class="mt-4">
+                <a class="text-primary-600 dark:text-primary-400 underline" href="https://www.linkedin.com/in/robertcedwards">LinkedIn</a> |
+                <a class="text-primary-600 dark:text-primary-400 underline" href="https://github.com/robertcedwards">GitHub</a> |
+                <a class="text-primary-600 dark:text-primary-400 underline" href="https://twitter.com/robertcedwards">Twitter</a> |
+                <a class="text-primary-600 dark:text-primary-400 underline" href="https://robertcedwards.netlify.app/">Portfolio</a>
+            </div>
+        </header>
+    
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-primary-700 dark:text-primary-300">My Mission</h2>
+            <p class="mt-4">
+                I'm passionate about using technology to bridge the gap between creative expression and real-world impact. Whether it's launching decentralized finance solutions, developing IoT applications, or hosting thought-provoking Web3 podcasts, I'm constantly exploring new ways to innovate and push the boundaries of what's possible.
+            </p>
+        </section>
+    
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-primary-700 dark:text-primary-300">Key Projects</h2>
+            <ul class="mt-4 space-y-4">
+                <li>
+                    <h3 class="text-xl font-bold"><a class="text-primary-600 dark:text-primary-400 underline" href="/projects/mecv">MeCV.AI 🔗↗</a></h3>
+                    <p class="mt-2">A platform that evaluates developer proficiency based on GitHub activity, providing valuable insights into coding expertise. Built with React and Tailwind, MeCV.AI leverages the GitHub API to create data-driven assessments.</p>
+                </li>
+                <li>
+                    <h3 class="text-xl font-bold"><a class="text-primary-600 dark:text-primary-400 underline" href="/projects/nutraio" >Nutra.io 🔗↗</a></h3>
+                    <p class="mt-2">An app designed to help users track supplement and medication use, correlating it with overall well-being and genetic data. By integrating information from sources like 23andMe and Examine.com, Nutra.io offers personalized health optimization.</p>
+                </li>
+                <li>
+                    <h3 class="text-xl font-bold"><a class="text-primary-600 dark:text-primary-400 underline" href="/projects/web3-on-fire" >Web3 on Fire 🔗↗</a></h3>
+                    <p class="mt-2">A podcast and newsletter covering the latest innovations in Web3 technology. Produced in collaboration with Ambire Wallet, the podcast features expert interviews and discussions on decentralized identity, smart contracts, and blockchain security.</p>
+                </li>
+                <li>
+					<h3 class="text-xl font-bold"><a class="text-primary-600 dark:text-primary-400 underline" href="/projects/cineprint" >Lexus CinePrint™ 🔗↗</a></h3>
+                    <p class="mt-2">An award-winning advertising campaign that integrated video and audio with print media to create a multi-sensory experience. Lexus CinePrint™ earned the FWA Mobile Site of the Day Award and set new standards in interactive advertising.</p>
+                </li>
+                <li>
+                    <h3 class="text-xl font-bold"><a class="text-primary-600 dark:text-primary-400 underline" href="/projects/visceral-reality" >Visceral Reality 🔗↗</a></h3>
+                    <p class="mt-2">An experimental VR project that integrates sensory stimuli like temperature, scent, and airflow to create immersive virtual experiences, setting new standards in VR design.</p>
+                </li>
+                <li>
+                    <h3 class="text-xl font-bold"><a class="text-primary-600 dark:text-primary-400 underline" href="/projects/huddle-space" >Huddle Space 🔗↗</a></h3>
+                    <p class="mt-2">An IoT solution that uses real-time sensor data to help employees locate available meeting rooms and optimize office space usage, improving workplace efficiency through smart technology.</p>
+                </li>
+            </ul>
+        </section>
+    
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-primary-700 dark:text-primary-300">Experience</h2>
+            <div class="mt-4 space-y-4">
+                <div>
+                    <h3 class="text-xl font-bold">Ambire Wallet — Wallet Advocate & Marketing Leader</h3>
+                    <p class="mt-2">Led community growth initiatives, established strategic partnerships, and hosted the "Web3 on Fire" podcast. Focused on driving user engagement, developing reward-based campaigns, and fostering collaborations with Web3 projects like Tide Protocol, Hats Protocol, Jokerace.io, and Rehash Podcast.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">0xPrimordia — Founder</h3>
+                    <p class="mt-2">Developed platforms like MeCV.AI and Nutra.io, exploring the intersection of Web3, health optimization, and developer tools. Focused on creating data-driven solutions that empower users and foster trust through blockchain technology.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">Team One — Manager of Creative Technology</h3>
+                    <p class="mt-2">Led the development of award-winning campaigns like Lexus CinePrint™ and advanced VR experiences like Visceral Reality. Merged traditional and digital media to create immersive experiences that pushed the boundaries of advertising and technology.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-primary-700 dark:text-primary-300">Awards & Grants</h2>
+            <ul class="mt-4 space-y-2 list-disc list-inside">
+                <li>2023: Austin Music Grant</li>
+                <li>2020: Austin Local Art Grant</li>
+                <li>2014: Launch an Idea - Solve for One</li>
+                <li>2013: Launch an Idea - Booster Fuel</li>
+                <li>2012: FWA - CinePrint</li>
+                <li>2012: Launch an Idea - Advocate</li>
+                <li>2010: Fast Company - Innovative Companies using LED Technology</li>
+                <li>2008: Editor's Choice Award - Maker Faire</li>
+            </ul>
+        </section>
+    
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-primary-700 dark:text-primary-300">Testimonials</h2>
+            <div class="mt-4 space-y-8">
+                <div class="p-4 border-l-4 border-primary-500 bg-gray-100 dark:bg-gray-800 rounded-md">
+                    <p class="text-lg">"Robert is super sharp and was one of the first people to really understand and explore the full potential of my company's product. He is great at crossing the boundaries between technology and design to create unique and innovative experiences. I would work with him in a minute."</p>
+                    <p class="mt-2 font-bold text-primary-600 dark:text-primary-400">— Mike Kuniavsky</p>
+                </div>
+                <div class="p-4 border-l-4 border-primary-500 bg-gray-100 dark:bg-gray-800 rounded-md">
+                    <p class="text-lg">"Rob is a great resource and a highly motivated designer who is also a lot of fun to work with. We've collaborated on several product development and industrial design projects, and his creativity always shines through."</p>
+                    <p class="mt-2 font-bold text-primary-600 dark:text-primary-400">— Kate Bailey</p>
+                </div>
+                <div class="p-4 border-l-4 border-primary-500 bg-gray-100 dark:bg-gray-800 rounded-md">
+                    <p class="text-lg">"We loved working with Robert, and miss him greatly! He was a huge asset to our company, and his ideas, energy, and work helped make our projects great!"</p>
+                    <p class="mt-2 font-bold text-primary-600 dark:text-primary-400">— Jeffrey McGrew</p>
+                </div>
+                <div class="p-4 border-l-4 border-primary-500 bg-gray-100 dark:bg-gray-800 rounded-md">
+                    <p class="text-lg">"Rob is very driven and creative, solving technical problems with ease. He's also fun to be around, and his work has been featured in DIY magazines. Rob brings more than you could have imagined to every project!"</p>
+                    <p class="mt-2 font-bold text-primary-600 dark:text-primary-400">— Ben Henry</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-primary-700 dark:text-primary-300">Skills & Expertise</h2>
+            <ul class="mt-4 space-y-2 list-disc list-inside">
+                <li>Technical: Full Stack Development, Web3, Blockchain, Smart Contracts, React, Tailwind, IoT, API Integration</li>
+                <li>Marketing & Community Building: Growth Strategy, Digital Advertising, Campaign Management, Social Media Strategy, Podcast Production</li>
+                <li>Business Development: Partnerships, Go-to-Market Strategy, CRM Optimization, Revenue Growth</li>
+            </ul>
+        </section>
+    
+        <footer class="py-8 text-center">
+            <h2 class="text-xl font-bold">Let's Connect</h2>
+            <p class="mt-4">I'm always excited to explore new opportunities, collaborate on innovative projects, and share my expertise in Web3 and creative technologies. Feel free to reach out to discuss how we can work together to bring your ideas to life.</p>
+            <form class="mt-4" data-netlify="true" method="POST" name="contact">
+                <input name="form-name" type="hidden" value="contact" />
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700" for="name">Name</label>
+                    <input class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm" id="name" name="name" required  type="text" />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700" for="email">Email</label>
+                    <input class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm" id="email" name="email" required type="email" />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700" for="message">Message</label>
+                    <textarea class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm" id="message" name="message" required rows="4"></textarea>
+                </div>
+                <div>
+                    <button class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-black hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500" type="submit">Send</button>
+                </div>
+            </form>
+        </footer>
+    </div>
 </PageLayout>

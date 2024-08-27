@@ -1,31 +1,21 @@
 ---
 title: "Alex Mouse"
-description: 'Please enter a description of your post here, between 50-160 chars!'
-publishDate: 24 July 2014
-tags: [project, accessibility, product ]
+description: "Open-source puff-and-sip mouse developed as an affordable alternative to assistive technology for individuals with mobility impairments."
+publishDate: 01 September 2014
+tags: [project, accessibility, assistive technology, open source]
 draft: false
 ---
 
-# Article Information
+## Project Overview
+To address accessibility challenges for individuals like Alex Franklin, who has limited mobility, I led the development of an affordable, open-source puff-and-sip mouse. This device allows users to navigate computers using breath control, offering a cheaper and customizable alternative to existing assistive technologies.
 
-## Summary
-Summary for Lynxify.
+## Impact
+The project resulted in a functional, low-cost solution that can be adapted to individual needs. It opened up access to technology for those with severe mobility impairments, reducing financial burdens and improving quality of life.
 
-## Key Points
-- Key Point 1
-- Key Point 2
-- Key Point 3
+---
 
-## Relevant Quotes
-- "Quote 1" - Source 1
-- "Quote 2" - Source 2
+## Project Overview
+To address accessibility challenges for individuals like Alex Franklin, who has limited mobility, I led the development of an affordable, open-source puff-and-sip mouse. This device allows users to navigate computers using breath control, offering a cheaper and customizable alternative to existing assistive technologies.
 
-## Personal Analysis
-Personal analysis for Lynxify.
-
-## Additional Links
-- [Link 1](#)
-- [Link 2](#)
-
-## Tags
-[[article]], [[lynxify]]
+## Impact
+The project resulted in a functional, low-cost solution that can be adapted to individual needs. It opened up access to technology for those with severe mobility impairments, reducing financial burdens and improving quality of life.

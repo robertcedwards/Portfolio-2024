@@ -6,10 +6,10 @@ import { getProjectSortDate } from "@/data/post";
 
 import FormattedDate from "../FormattedDate.astro";
 
-type Props<Tag extends HTMLTag> = Polymorphic<{ as: Tag }> & {
+type Props<Tag extends HTMLTag> = {
 	post: CollectionEntry<"project">;
 	withDesc?: boolean;
-};
+} & Polymorphic<{ as: Tag }>;
 
 const { as: Tag = "div", post, withDesc = false } = Astro.props;
 const postDate = getProjectSortDate(post);
