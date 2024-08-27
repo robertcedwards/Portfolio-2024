@@ -5,8 +5,10 @@ import { getAllPosts, getAllProjects, sortMDByDate } from "@/data/post";
 import PageLayout from "@/layouts/Base.astro";
 const MAX_POSTS = 5;
 const allPosts = await getAllPosts();
-const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 const allProjects = await getAllProjects();
+const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
+const allProjectsByDate = sortMDByDate(allProjects).slice(0, MAX_POSTS);
+
 
 ---
 
@@ -23,7 +25,7 @@ const allProjects = await getAllProjects();
 		<h2 class="title mb-4 text-xl">Projects</h2>
 		<ul class="space-y-4">
 			{
-				allProjects.slice(0, MAX_POSTS).map((project) => (
+				allProjectsByDate.slice(0, MAX_POSTS).map((project) => (
 					<li class="grid gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
 						<PostPreview post={project} />
 					</li>
