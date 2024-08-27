@@ -37,32 +37,32 @@ This is a portfolio site for Robert C. Edwards, built using the Astro framework 
         <li>Business Development: Partnerships, Go-to-Market Strategy, CRM Optimization, Revenue Growth</li>
     </ul>
 </section>
-    
+
 <section class="mb-12">
     <h2 class="text-2xl font-semibold text-primary-700 dark:text-primary-300">Key Projects</h2>
     <ul class="mt-4 space-y-4">
         <li>
-            <h3 class="text-xl font-bold"><a class="text-primary-600 dark:text-primary-400 underline" href="/projects/mecv">MeCV.AI 🔗↗</a></h3>
+            <h3 class="text-xl font-bold"><a class="text-primary-600 dark:text-primary-400 underline" href="https://robertcedwards.com/projects/mecv/">MeCV.AI 🔗↗</a></h3>
             <p class="mt-2">A platform that evaluates developer proficiency based on GitHub activity, providing valuable insights into coding expertise. Built with React and Tailwind, MeCV.AI leverages the GitHub API to create data-driven assessments.</p>
         </li>
         <li>
-            <h3 class="text-xl font-bold"><a class="text-primary-600 dark:text-primary-400 underline" href="/projects/nutraio" >Nutra.io 🔗↗</a></h3>
+            <h3 class="text-xl font-bold"><a class="text-primary-600 dark:text-primary-400 underline" href="https://robertcedwards.com/projects/nutraio" >Nutra.io 🔗↗</a></h3>
             <p class="mt-2">An app designed to help users track supplement and medication use, correlating it with overall well-being and genetic data. By integrating information from sources like 23andMe and Examine.com, Nutra.io offers personalized health optimization.</p>
         </li>
         <li>
-            <h3 class="text-xl font-bold"><a class="text-primary-600 dark:text-primary-400 underline" href="/projects/web3-on-fire" >Web3 on Fire 🔗↗</a></h3>
+            <h3 class="text-xl font-bold"><a class="text-primary-600 dark:text-primary-400 underline" href="https://robertcedwards.com/projects/web3-on-fire" >Web3 on Fire 🔗↗</a></h3>
             <p class="mt-2">A podcast and newsletter covering the latest innovations in Web3 technology. Produced in collaboration with Ambire Wallet, the podcast features expert interviews and discussions on decentralized identity, smart contracts, and blockchain security.</p>
         </li>
         <li>
-  <h3 class="text-xl font-bold"><a class="text-primary-600 dark:text-primary-400 underline" href="/projects/cineprint" >Lexus CinePrint™ 🔗↗</a></h3>
+  <h3 class="text-xl font-bold"><a class="text-primary-600 dark:text-primary-400 underline" href="https://robertcedwards.com/projects/cineprint" >Lexus CinePrint™ 🔗↗</a></h3>
             <p class="mt-2">An award-winning advertising campaign that integrated video and audio with print media to create a multi-sensory experience. Lexus CinePrint™ earned the FWA Mobile Site of the Day Award and set new standards in interactive advertising.</p>
         </li>
         <li>
-            <h3 class="text-xl font-bold"><a class="text-primary-600 dark:text-primary-400 underline" href="/projects/visceral-reality" >Visceral Reality 🔗↗</a></h3>
+            <h3 class="text-xl font-bold"><a class="text-primary-600 dark:text-primary-400 underline" href="https://robertcedwards.com/projects/visceral-reality" >Visceral Reality 🔗↗</a></h3>
             <p class="mt-2">An experimental VR project that integrates sensory stimuli like temperature, scent, and airflow to create immersive virtual experiences, setting new standards in VR design.</p>
         </li>
         <li>
-            <h3 class="text-xl font-bold"><a class="text-primary-600 dark:text-primary-400 underline" href="/projects/huddle-space" >Huddle Space 🔗↗</a></h3>
+            <h3 class="text-xl font-bold"><a class="text-primary-600 dark:text-primary-400 underline" href="https://robertcedwards.com/projects/huddle-space" >Huddle Space 🔗↗</a></h3>
             <p class="mt-2">An IoT solution that uses real-time sensor data to help employees locate available meeting rooms and optimize office space usage, improving workplace efficiency through smart technology.</p>
         </li>
     </ul>
@@ -121,8 +121,5 @@ This is a portfolio site for Robert C. Edwards, built using the Astro framework 
 ```
 </div>
 
-
-
 ## License
-
 MIT
