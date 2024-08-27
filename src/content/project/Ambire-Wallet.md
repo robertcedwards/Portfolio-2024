@@ -1,7 +1,7 @@
 ---
 title: "Ambire Wallet"
 description: 'Community Builder, Growth Strategist, Marketing Lead at Ambire Wallet, focused on Web3 and decentralized platforms'
-publishDate: 22 August 22
+publishDate: 22 August 24
 tags: [web3, community engagement, marketing, podcast production, decentralized platforms, blockchain, partnerships]
 draft: false
 ---

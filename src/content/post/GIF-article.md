@@ -1,13 +1,11 @@
 ---
-title: "Airstack GIF"
+title: "Building a PFP GIF tool w/ Airstack"
 description: 'Please enter a description of your post here, between 50-160 chars!'
 publishDate: 28 March 2024
 tags: [article]
 draft: false
 ---
-0xHashbrown | Building a PFP GIF tool with Airstack
-============================
-
+## Backstory
 After the last build where we built a tool combining [Neynar](https://neynar.com/) & [Airstack](https://airstack.xyz/), this round we're going to focus on creating a solution solely using Airstack.  
 The last tool was a narrowly focused solution for specific problem, this time, we're going to make something that has a broader market fit and more people might actually find fun and useful!  
 
@@ -27,7 +25,7 @@ The ideation phase was over and it was time to build a tool so anyone can enter 
 
 Now that we have our idea, let's structure the app before we write any code.
 
-**Structure:**
+## **Structure**
 
 We'll need a basic HTML/CSS structure, some sort of library for GIF creation, and [Airstack](https://airstack.xyz/) to fetch blockchain data.
 
@@ -51,7 +49,7 @@ Here's an example of the query we'll be using to fetch Minted NFTs to avoid rand
 
 ![](https://storage.googleapis.com/papyrus_images/4e2cf9fec87f512313f96bb7cfb45fd7.gif)
 
-Airstack API Explorer with AI Assistant
+## Airstack API Explorer with AI Assistant
 
 In this example, I queried the User:0xHashbrown, but for our example, we'll pass variables via the GraphQL query.
 
@@ -122,7 +120,7 @@ Getting started with Airstack is super easy. You'll need a free account, and if 
 
 Now that we have our query, we'll need to create our back-end that will serve an API route so we can use the form data containing the ENS or Wallet Address, and the function that will use that data to fetch the NFTs from Airstack.  
 
-**Project Setup:**
+## **Project Setup**
 
 Now that we have our structure and tools sorted out, let's initialize our project.
 
@@ -181,7 +179,7 @@ Next we'll need to create our API route function for the /api/fetch-nfts endpoin
 
 Now that we have an Express Server to handle our static files, the ENS input, and fetching and returning the data, we can move on to our front-end to create the HTML/CSS/JS that takes the user's input, fetches the NFT images, displays them on the page, allows the user to select the desired NFTs, previews them, and ultimately creates the GIF.
 
-**Front-end:**
+## **Frontend**
 
 Let's setup a basic front-end with HTML and [Tailwind](https://tailwindcss.com) for styling.
 
@@ -388,7 +386,7 @@ And this function takes those data blobs and uses GIF.js and webworkers to seque
 
 We've completed the front-end.js so we can handle the images coming from our API call, a way to select and preview those images and finally a method to create the GIF and download it.
 
-**Note on Deployment:**
+## **Note on Deployment**
 
 Currently our app is structured with our HTML, CSS, and front-end.js in our public folder, with our back-end.js in our root. We'll need to move and rename back-end.js to api/index.ts. This is a deployment detail for [Vercel](https://vercel.com) in order to uses edge functions. Learn more here: [Express.js Guide](https://vercel.com/guides/using-express-with-vercel).
 
@@ -405,22 +403,17 @@ App running on localhost:3000
 Looking good! Now that we've verified that it's working, we can focus on deployment.  
 We'll need [Vercel](https://vercel.com/home) and [Github](https://github.com/) accounts, both free version will work for our purposes. Fork our project into your own account.
 
-[
 
 ![](https://opengraph.githubassets.com/f17409c6e6a767bd7bdc9e19b27b28ab49c7c33ec804f2f3f6980cd891ccbae3/robertcedwards/Airstack-NFT-GIF-Builder)
 
 https://github.com
 
-GitHub - robertcedwards/Airstack-NFT-GIF-Builder: A tool built with Airstack to create an animated GIF from NFTs
+## GitHub Repo
+- [A tool built with Airstack to create an animated GIF from NFTs - robertcedwards/Airstack-NFT-GIF-Builder](https://github.com/robertcedwards/Airstack-NFT-GIF-Builder)
+
 ----------------------------------------------------------------------------------------------------------------
 
-A tool built with Airstack to create an animated GIF from NFTs - robertcedwards/Airstack-NFT-GIF-Builder
-
-
-
-
-
-](https://github.com/robertcedwards/Airstack-NFT-GIF-Builder)
+## Deploy
 
 Once you have your fork you'll proceed to [Vercel](https://vercel.com/new) to import and deploy from there.
 
