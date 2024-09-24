@@ -1,6 +1,6 @@
 ---
 title: Nutra.io
-description: 'Nutra.io: Track supplements and medications, integrate genetic data, and optimize health with personalized recommendations. Seeking investment for further development.'
+description: 'Nutra.io: Track supplements and medications, integrate genetic data, and optimize health with personalized recommendations.'
 publishDate: 09 August 2024
 tags: [project, health, genetics, supplements, medication, investment]
 draft: false
