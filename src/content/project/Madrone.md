@@ -1,6 +1,6 @@
 ---
 title: "Madrone Mountain Coffee"
-description: 'Transforming a small roastery into a community hub with an espresso bar, food trucks, and live events. Experience exceptional coffee and vibrant gatherings at Madrone Mountain Coffee.'
+description: 'Transforming a small roastery into a community hub with an espresso bar, food trucks, and live events.'
 publishDate: 01 October 2022
 tags: [article, project, company]
 draft: false
