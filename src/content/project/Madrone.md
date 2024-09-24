@@ -1,6 +1,6 @@
 ---
 title: "Madrone Mountain Coffee"
-description: 'Please enter a description of your post here, between 50-160 chars!'
+description: 'Transforming a small roastery into a community hub with an espresso bar, food trucks, and live events. Experience exceptional coffee and vibrant gatherings at Madrone Mountain Coffee.'
 publishDate: 01 October 2022
 tags: [article, project, company]
 draft: false
@@ -19,12 +19,6 @@ Our success enabled us to further expand into a large single facility that integ
 
 Website and Brand Identity
 The website, Madrone Mountain Coffee, reflects our commitment to quality and community. It features a rich narrative about our coffee sourcing, roasting process, and the experiences we offer at our location. The website also serves as a platform for our online store, where customers can purchase our coffee and merchandise, further extending our reach beyond the local community.
-
-
-## Key Points
-- Key Point 1
-- Key Point 2
-- Key Point 3
 
 ## Additional Links
 - [Madrone Mountain Coffee Website](https://madrone.coffee)

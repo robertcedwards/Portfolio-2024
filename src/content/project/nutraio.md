@@ -1,6 +1,6 @@
 ---
 title: Nutra.io
-description: 'Please enter a description of your post here, between 50-160 chars!'
+Nutra.io: Track supplements and medications, integrate genetic data, and optimize health with personalized recommendations. Seeking investment for further development.'
 publishDate: 09 August 2024
 tags: []
 draft: false
