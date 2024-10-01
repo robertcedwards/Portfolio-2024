@@ -21,7 +21,7 @@
 		"astro-embed": "^0.7.2",
 		"astro-expressive-code": "^0.35.3",
 		"astro-icon": "^1.1.0",
-		"cssnano": "^7.0.4",
+		"cssnano": "^7.0.6",
 		"rehype-external-links": "^3.0.0",
 		"satori": "0.10.14",
 		"satori-html": "^0.3.2",
