@@ -1,7 +1,8 @@
 ---
-title: "DIY Drone Building: From Conversation to Creation"
+title: 'DIY Drone Building: From Conversation to Creation'
 description: 'A look at the process of building custom drones'
-publishDate: 17 November 2024
+pubDate: '2024-11-17'
+updatedDate: '2024-11-17'
 tags: [project, drone, building ]
 draft: false
 ---
