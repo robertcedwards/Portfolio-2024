@@ -1,7 +1,7 @@
 ---
 title: "Kit and Buliding for All Eventualities"
 description: 'A list of tools and resources for getting through things'
-publishDate: 17 November 2024
+publishDate: 16 November 2024    
 tags: [article, tools, resources]
 draft: false
 ---
