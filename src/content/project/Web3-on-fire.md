@@ -15,7 +15,7 @@ draft: false
 [![Web3 on Fire Episode](public/projects/web3onfire/df.jpg)](https://pods.media/web3-on-fire/disrupting-networks-and-designing-the-future-with-david-furlong)
 
 ## Project Overview
-"[Web3 on Fire](https://ambire.com/web3onfire)" is a podcast and weekly newsletter that dives into the latest innovations in Web3 technology. Hosted by Rob and produced by Ambire Wallet, the podcast covers critical topics such as decentralized identity, smart contract wallets, account abstraction, and the future of Web3 dApps and tools. The project serves as a key educational resource for individuals passionate about decentralized technologies, featuring expert interviews and insightful discussions on emerging trends.
+"[Web3 on Fire](https://blog.ambire.com/tag/crypto-talks/)" is a podcast and weekly newsletter that dives into the latest innovations in Web3 technology. Hosted by Rob and produced by Ambire Wallet, the podcast covers critical topics such as decentralized identity, smart contract wallets, account abstraction, and the future of Web3 dApps and tools. The project serves as a key educational resource for individuals passionate about decentralized technologies, featuring expert interviews and insightful discussions on emerging trends.
 
 ## Key Contributions
 - **Podcast Production**: Managed all aspects of podcast production, including scripting, hosting, and editing, ensuring high-quality, engaging content.
@@ -35,10 +35,6 @@ My involvement in "Web3 on Fire" reflects my deep expertise in Web3 technologies
 
 ## Outcome
 The success of "Web3 on Fire" is evident in its expanding listener base and increasing influence in the Web3 space. By producing high-quality, decentralized content that resonates with a diverse audience, the podcast and video series continue to contribute to the ongoing education and engagement of the Web3 community.
-
-## Additional Involvement
-In addition to hosting and producing "Web3 on Fire," I actively contribute to various Web3 projects, including Ambire Wallet, where I focus on enhancing community integration through blockchain innovations.
-
 
 ## Links
 - **Listen & Mint on Pods.media**: [Web3 on Fire - PODs](https://pods.media/web3-on-fire)
