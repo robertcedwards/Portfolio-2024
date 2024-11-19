@@ -1,0 +1,80 @@
+---
+title: "Weeknotes: November 18th"
+description: "Weekly update covering AI projects, digital nostalgia, and physical computing experiments including Longevity AI and Mural Bot developments"
+publishDate: 18 November 2024
+tags: [weeknotes, ai, projects]
+draft: false
+---
+
+# Weeknotes: [November 18th]
+
+_Weeknotes for Nov 
+
+I try to publish weeknotes every Friday with what I've been working on, as well as interesting links, experiments, AI research and projects.
+
+## Major accomplishments this week
+
+# Longevity AI & Other Projects
+
+## Current Projects
+
+I've been diving into several projects this week, primarily focusing on AI, digital nostalgia, and physical computing. A significant portion of my time has been dedicated to developing prototypes for the Mural Bot project, a collaboration with Joseph Kristofeltti, Tyler Hobbs, and Jon Starr.
+You can also dive into more details on our project [here](https://github.com/hashbrown/mural-bot).
+*Bonus, Here are a couple videos, [one from Joe's TedX talk](https://youtu.be/JjystPCYtv4?si=_kwA1Efb1VAE4kMZ) titled "What it’s Like to Use the City as Your Canvas" & and [one introducing Tyler Hobbs](https://youtu.be/5ETrXegVj_g?si=DKUBSAXtmaaQeboN) from Unit.
+You can also dive into [Joe's website](https://josephkristofeltti.com/) and [Tyler's website](https://tylerxhobbs.com/) to learn more about their work.
+
+## Longevity AI
+
+Recent conversations about AI have sparked interesting thoughts about its potential role in preserving digital culture and personal memories. The focus isn't on AI replacing human interaction, but rather on:
+
+- Preserving memories of loved ones
+- Creating digital legacies while people are still alive
+- Enabling meaningful interactions with digital avatars of historical figures
+- Building personal digital archives for future conversations
+
+## Project progress
+
+I've been using Elevenlabs for their voice cloning and custom voices. But a cool new feature called Conversational AI (in Beta) let me build a prototype using text files from web bios and some of his transcribed audio cassettes from when he wrote his memoir.
+
+Elevenlabs allows you to create the intro your virtual agent will say, and then create a system prompt that will be "used to determine the persona of the agent and the context of the conversation."
+Claude Wrote the intro and the system prompt and itwas quite a robust output. The other piece that was helpful to customize was the custom voice, which I had create from those audio cassette tapes once I cleaned up the audio a bit.
+I customized a bio page using Huggingface Spaces and [served up a static html page](https://huggingface.co/spaces/hashbrown/Voice_Widgets) for my grandfather and embedded the widget from Elevenlabs that will initiate a call with the custom agent.
+
+Go and check it out while I still have credits left on it:
+
+[![Screenshot of Norman's bio page](../../../public/posts/norman-web-screen.png)](https://huggingface.co/spaces/hashbrown/norman-b-edwards)
+
+
+
+*Bonus: I also created another agent based on [James Hollis](https://jameshollis.net/) and his work from books and lectures:
+
+https://huggingface.co/spaces/hashbrown/Dr-James-Hollis-Demo
+
+[Placeholder for timelapse video of today]
+
+![[Web Browser Mockups Cover.png]]
+
+## Blog entries
+
+- [Blog post title 1](link) — Brief description or context
+
+## Interesting Links & Experiments
+
+https://huggingface.co/datasets/fka/awesome-chatgpt-prompts
+
+https://huggingface.co/spaces/yasserrmd/NotebookLlama
+
+I recently came across a fascinating article by [Simon Willison](https://simonwillison.net/2024/Oct/15/chatgpt-horoscopes/) about ChatGPT's memory features and personality insights. The article explores a viral prompt:
+
+> From all of our interactions what is one thing that you can tell me about myself that I may not know about myself
+
+While this prompt appears to provide deep personal insights, Simon explains that it's more akin to a sophisticated horoscope, leveraging ChatGPT's memory feature that OpenAI introduced in February and fully implemented in September.
+
+## Next steps
+
+Now that [milestone] has landed I'm free to start thinking about [next plans]. I'm leaning towards [specific approach or idea] because [reasoning].
+
+---
+
+Previous: [Link to previous weeknote]
+Next: [Link to next weeknote]
