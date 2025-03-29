@@ -1,6 +1,6 @@
 ---
 title: "Lynxify"
-description: 'Please enter a description of your post here, between 50-160 chars!'
+description: 'Lynxify: A DEX on Hedera blockchain for seamless token swaps, staking, and trading with low fees. Focus on cross-chain swapping and user-friendly interface.'
 publishDate: 09 August 2024
 tags: [article]
 draft: false

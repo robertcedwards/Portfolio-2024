@@ -13,9 +13,3 @@ To address accessibility challenges for individuals like Alex Franklin, who has 
 The project resulted in a functional, low-cost solution that can be adapted to individual needs. It opened up access to technology for those with severe mobility impairments, reducing financial burdens and improving quality of life.
 
 ---
-
-## Project Overview
-To address accessibility challenges for individuals like Alex Franklin, who has limited mobility, I led the development of an affordable, open-source puff-and-sip mouse. This device allows users to navigate computers using breath control, offering a cheaper and customizable alternative to existing assistive technologies.
-
-## Impact
-The project resulted in a functional, low-cost solution that can be adapted to individual needs. It opened up access to technology for those with severe mobility impairments, reducing financial burdens and improving quality of life.
