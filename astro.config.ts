@@ -8,6 +8,7 @@ import icon from "astro-icon";
 import fs from "fs";
 import rehypeExternalLinks from "rehype-external-links";
 import remarkUnwrapImages from "remark-unwrap-images";
+import path from "path";
 
 import { expressiveCodeOptions } from "./src/site.config";
 import { remarkReadingTime } from "./src/utils/remark-reading-time";
@@ -54,6 +55,11 @@ export default defineConfig({
 			exclude: ["@resvg/resvg-js"],
 		},
 		plugins: [rawFonts([".ttf", ".woff"])],
+		resolve: {
+			alias: {
+				"@": path.resolve("./src"),
+			},
+		},
 	},
 });
 

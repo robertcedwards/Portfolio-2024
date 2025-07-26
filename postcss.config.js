@@ -1,6 +1,9 @@
-module.exports = {
+import autoprefixer from "autoprefixer";
+import cssnano from "cssnano";
+
+export default {
 	plugins: [
-		require("autoprefixer"),
-		...(process.env.NODE_ENV === "production" ? [require("cssnano")] : []),
+		autoprefixer,
+		...(process.env.NODE_ENV === "production" ? [cssnano] : []),
 	],
 };

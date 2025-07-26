@@ -1,4 +1,4 @@
-import { siteConfig } from "@/site-config";
+import { siteConfig } from "@/site.config";
 import { type CollectionEntry, getCollection } from "astro:content";
 
 /** filter out draft posts based on the environment */
