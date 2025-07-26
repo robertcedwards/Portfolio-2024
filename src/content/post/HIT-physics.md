@@ -1,6 +1,6 @@
 ---
 title: "High Intensity Training Force Metrics: Beyond Reps × Weight"
-description: 'Go beyond reps × weight—discover physics-based metrics like Time Under Load and Force-Time Index to reveal your true High Intensity Training progress and performance.'
+description: 'Go beyond reps × weight—discover physics-based metrics like Time Under Load and Force-Time Index'
 publishDate: 6 July 2022
 tags: [project, accessibility, product ]
 draft: false
