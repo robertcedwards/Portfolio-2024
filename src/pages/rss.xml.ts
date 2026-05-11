@@ -1,5 +1,5 @@
 import rss from "@astrojs/rss";
-import { siteConfig } from "@/site-config";
+import { siteConfig } from "@/site.config";
 import { getAllPosts } from "@/data/post";
 
 export const GET = async () => {

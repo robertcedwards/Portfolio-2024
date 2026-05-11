@@ -3,7 +3,7 @@ import type { APIContext, InferGetStaticPropsType } from "astro";
 import RobotoMonoBold from "@/assets/roboto-mono-700.ttf";
 import RobotoMono from "@/assets/roboto-mono-regular.ttf";
 import { getAllProjects } from "@/data/post";
-import { siteConfig } from "@/site-config";
+import { siteConfig } from "@/site.config";
 import { getFormattedDate } from "@/utils";
 import { Resvg } from "@resvg/resvg-js";
 import satori, { type SatoriOptions } from "satori";
@@ -67,7 +67,8 @@ export async function GET(context: APIContext) {
 		month: "long",
 		weekday: "long",
 	});
-	const svg = await satori(markup(title, projectDate), ogOptions);
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	const svg = await satori(markup(title, projectDate) as any, ogOptions);
 	const png = new Resvg(svg).render().asPng();
 	return new Response(png, {
 		headers: {

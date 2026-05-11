@@ -37,16 +37,13 @@ const { headings } = await project.render();
     <meta content="1.0" property="of:accepts:anonymous" />
 
 
-        <meta content="Back" property="of:button:1" />
-        <meta content="link" property="of:button:1:action" />
-        <meta content={`/projects/${prevProject.slug}/`} property="of:button:1:target" />
+        {prevProject && <meta content="Back" property="of:button:1" />}
+        {prevProject && <meta content="link" property="of:button:1:action" />}
+        {prevProject && <meta content={`/projects/${prevProject.slug}/`} property="of:button:1:target" />}
 
-
-
-
-        <meta content="Forward" property="of:button:2" />
-        <meta content="link" property="of:button:2:action" />
-        <meta content={`/projects/${nextProject.slug}/`} property="of:button:2:target" />
+        {nextProject && <meta content="Forward" property="of:button:2" />}
+        {nextProject && <meta content="link" property="of:button:2:action" />}
+        {nextProject && <meta content={`/projects/${nextProject.slug}/`} property="of:button:2:target" />}
 
     <meta content="Link" property="of:button:3" />
     <meta content="link" property="of:button:3:action" />
