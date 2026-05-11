@@ -1,6 +1,6 @@
 ---
 title: Nutra.io
-description: 'Please enter a description of your post here, between 50-160 chars!'
+description: 'App for tracking supplements and medications, correlating usage with wellbeing using genetic data from 23andMe and insights from Examine.com.'
 publishDate: 01 April 2017
 tags: []
 draft: false

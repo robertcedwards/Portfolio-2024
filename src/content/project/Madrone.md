@@ -1,6 +1,6 @@
 ---
 title: "Madrone Mountain Coffee"
-description: 'Please enter a description of your post here, between 50-160 chars!'
+description: 'Co-founding partner of Madrone Mountain Coffee — grew a warehouse roastery into a community hub with espresso bar, food trucks, and live events.'
 publishDate: 01 October 2022
 tags: [article, project, company]
 draft: false

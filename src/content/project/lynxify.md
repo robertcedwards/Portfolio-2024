@@ -1,6 +1,6 @@
 ---
 title: "Lynxify"
-description: 'Please enter a description of your post here, between 50-160 chars!'
+description: 'Decentralized exchange on Hedera blockchain with cross-chain token swaps and staking via the Hashport API. CGO & Project Lead.'
 publishDate: 09 August 2024
 tags: [article]
 draft: false
