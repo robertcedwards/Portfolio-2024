@@ -8,6 +8,9 @@
       "dom.iterable"
     ],
     "paths": {
+      "@/*": [
+        "src/*"
+      ],
       "@/assets/*": [
         "src/assets/*"
       ],
@@ -27,6 +30,9 @@
         "src/types.ts"
       ],
       "@/site-config": [
+        "src/site.config.ts"
+      ],
+      "@/site.config": [
         "src/site.config.ts"
       ]
     }

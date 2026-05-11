@@ -3,7 +3,7 @@ title: "Samurai Labs"
 description: 'Please enter a description of your post here, between 50-160 chars!'
 publishDate: 01 Jan 2019
 tags: [article]
-draft: false
+draft: true
 ---
 
 # Article Information

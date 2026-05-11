@@ -1,6 +1,7 @@
 {
 	"name": "astro-robertcedwards",
 	"version": "4.6.0",
+	"type": "module",
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",

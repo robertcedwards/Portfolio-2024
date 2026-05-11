@@ -6,6 +6,7 @@ import embeds from 'astro-embed/integration';
 import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import fs from "fs";
+import path from "path";
 import rehypeExternalLinks from "rehype-external-links";
 import remarkUnwrapImages from "remark-unwrap-images";
 
@@ -54,6 +55,11 @@ export default defineConfig({
 			exclude: ["@resvg/resvg-js"],
 		},
 		plugins: [rawFonts([".ttf", ".woff"])],
+		resolve: {
+			alias: {
+				"@": path.resolve("./src"),
+			},
+		},
 	},
 });
 
