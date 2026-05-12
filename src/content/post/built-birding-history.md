@@ -1,6 +1,6 @@
 ---
 title: "Built a visual history of American birding"
-description: "Six cinematic chapters tracing competitive birding from Audubon's shotgun era to Noah Strycker's 6,042-species world record — animated, interactive, single-file HTML."
+description: "Six chapters tracing American birding from Audubon's shotgun era to Strycker's 6,042-species world record — animated, interactive, single-file HTML."
 publishDate: 01 May 2026
 tags: [interactive, history, birding, data visualization, html, prototyping]
 draft: false
