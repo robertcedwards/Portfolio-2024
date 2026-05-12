@@ -1,7 +1,7 @@
 ---
 title: "What It's Like to Be a Bat"
 description: "Interactive HTML essay on Nagel's philosophy of consciousness — rendered through ASCII bat art, sonar oscilloscopes, and echolocation UI."
-publishDate: 01 May 2025
+publishDate: 30 Apr 2026
 tags: [project, interactive, essay, philosophy, design, html]
 ogImage: '/projects/bat-essay.png'
 draft: false
