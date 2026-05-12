@@ -1,6 +1,6 @@
 ---
 title: "The Big Year — A Visual History of American Birding"
-description: 'A cinematic six-chapter interactive guide tracing American birding from Audubon's shotgun era to Noah Strycker's 6,042-species world record — with animated data, interactive maps, and real-time countdowns.'
+description: "Interactive guide tracing American birding from Audubon's shotgun era to Strycker's 6,042-species world record. Six chapters, animated data, scroll timelines."
 publishDate: 01 May 2025
 tags: [project, interactive, history, birding, data visualization, html]
 ogImage: '/projects/birding-history.png'

@@ -1,6 +1,6 @@
 ---
 title: "Mural Bot"
-description: 'Robotic mural painting system at the intersection of physical computing and generative art, built in collaboration with artists Joseph Kristofeltti, Tyler Hobbs, and Jon Starr.'
+description: 'Robotic mural painting system bridging physical computing and generative art — built with artists Tyler Hobbs, Joseph Kristofeltti, and Jon Starr.'
 publishDate: 16 November 2024
 tags: [project, physical computing, robotics, art, collaboration]
 draft: false

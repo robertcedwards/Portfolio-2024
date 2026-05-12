@@ -1,6 +1,6 @@
 ---
 title: "Visual Guides"
-description: 'A growing series of single-file HTML visual guides making complex topics immediately legible — from cotton quality and fabric grading to birding history and fermentation.'
+description: 'Single-file HTML visual guides making complex topics legible — from cotton quality and fabric grading to birding history and fermentation science.'
 publishDate: 01 May 2025
 tags: [project, design, visual, education, html, information design]
 ogImage: '/projects/visual-guides.png'
