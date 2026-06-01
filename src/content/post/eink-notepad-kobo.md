@@ -7,6 +7,8 @@ ogImage: '/projects/kobo-notepad-editor.jpg'
 draft: false
 ---
 
+![The Kobo home screen — an e-ink display that's readable in full sunlight with almost no power draw](/projects/kobo-home.jpg)
+
 My Kobo Libra Color is a lovely device for reading. It also has a feature most people never touch: a hidden, half-finished "experimental" web browser. I kept thinking about that grayscale-friendly, glare-free, gloriously distraction-free screen and wondering — *could I write on this thing?*
 
 Not in some heavyweight app. Just a clean little text editor I could open in the browser, type into, and save. So I built one. The interesting part wasn't the editor — it was letting the device dictate the design instead of guessing.
@@ -43,6 +45,8 @@ That table *is* the architecture. I didn't have to debate it.
 **`contentEditable` works** — which means rich text was *possible*. But I chose plain `.txt` anyway. On a reflective e-ink panel, plain text is calm, fast, and survives forever. "Formatting" became a set of typed conventions (headings underlined with `===`, `[ ]` checkboxes, `#tags`) documented right inside the app.
 
 The whole thing is **zero dependencies** — just Node's built-in `http` module. Nothing to install, nothing to break.
+
+![The editor running in the Kobo's experimental browser — plain text, no dependencies, served from a local Node server](/projects/kobo-notepad-editor.jpg)
 
 ## Making it actually pleasant
 
