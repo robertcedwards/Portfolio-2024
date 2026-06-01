@@ -1,6 +1,6 @@
 ---
-title: "Let the Browser Tell You What to Build: A Plain-Text Notepad for My Kobo"
-description: "I turned my Kobo's forgotten experimental browser into a distraction-free writing tool — by probing what its ancient WebKit could do before writing a single line."
+title: "Building a notepad for my Kobo's experimental browser"
+description: "I turned my Kobo's experimental browser into a distraction-free writing tool — probing what its ancient WebKit could do before writing a single line."
 publishDate: 01 Jun 2026
 tags: [e-ink, kobo, webdev, minimalism, prototyping, hardware]
 ogImage: '/projects/kobo-notepad-editor.jpg'
