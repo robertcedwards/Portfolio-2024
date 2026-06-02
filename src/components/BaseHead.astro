@@ -12,7 +12,7 @@ const { articleDate, description, nextUrl, ogImage, prevUrl, title } = Astro.pro
 const titleSeparator = "•";
 const siteTitle = `${title} ${titleSeparator} ${siteConfig.title}`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url).href;
+const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.site).href;
 const prevUrlFull = prevUrl ? new URL(Astro.site + "projects/" + prevUrl) : undefined;
 const nextUrlFull = nextUrl ? new URL(Astro.site + "projects/" + nextUrl) : undefined;
 
@@ -58,11 +58,12 @@ const nextUrlFull = nextUrl ? new URL(Astro.site + "projects/" + nextUrl) : unde
 }
 
 {/* Twitter */}
-<meta content="summary_large_image" property="twitter:card" />
-<meta content={canonicalURL} property="twitter:url" />
-<meta content={title} property="twitter:title" />
-<meta content={description} property="twitter:description" />
-<meta content={socialImageURL} property="twitter:image" />
+<meta content="summary_large_image" name="twitter:card" />
+<meta content={canonicalURL} name="twitter:url" />
+<meta content={title} name="twitter:title" />
+<meta content={description} name="twitter:description" />
+<meta content={socialImageURL} name="twitter:image" />
+<meta content={siteConfig.author} name="twitter:creator" />
 
 {/* Open Frames Metadata */}
 <meta content="vNext" property="fc:frame" />
