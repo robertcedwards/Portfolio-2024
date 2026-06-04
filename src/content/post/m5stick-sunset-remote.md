@@ -3,7 +3,7 @@ title: "Building a sunset-aware TV remote on an M5StickC Plus"
 description: "A pocket IR remote on an M5StickC Plus that scripts Samsung menu macros and auto-dims the TV backlight 15 minutes before sunset, computed offline."
 publishDate: 01 June 2026
 tags: [hardware, embedded, esp32, m5stack, ir, prototyping]
-draft: true
+draft: false
 ---
 
 My TV is too bright at night. Not the volume, not the input — the *backlight*. And there's no button for it. On a modern Samsung you change it by diving four levels into the on-screen menu, which means no universal remote and no smart-home integration can touch it. So I built a tiny device that walks the menu for me, and does it automatically at sunset.
