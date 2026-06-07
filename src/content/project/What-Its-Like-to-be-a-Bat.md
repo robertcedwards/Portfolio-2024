@@ -33,6 +33,11 @@ The piece doesn't just discuss echolocation. It tries to *perform* the inaccessi
 
 **Variable typography** — Pull quotes use `clamp()` fluid sizing. The title cascades small-to-large on the word "LIKE" — placing the semantic weight where echolocation would place it.
 
+## Links
+
+- [Live essay](https://verdant-biscuit-8235f9.netlify.app)
+- [Build post](/posts/built-bat-essay)
+
 ## Sources
 
 - Thomas Nagel — *What Is It Like to Be a Bat?* (1974)

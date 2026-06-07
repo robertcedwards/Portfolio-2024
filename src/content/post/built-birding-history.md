@@ -15,3 +15,7 @@ The 1998 movie year gets its own section with cast credits alongside the real bi
 Animated birds fly across the background throughout. Gold progress bar tracks reading position. Every section reveals on scroll.
 
 The format keeps working. History sits still long enough to design around it.
+
+---
+
+[Open the guide](https://cheery-baklava-27bb2f.netlify.app) · [Full project write-up](/projects/birding-history)

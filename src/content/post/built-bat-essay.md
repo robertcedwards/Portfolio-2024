@@ -15,3 +15,7 @@ Click anywhere and a sonar ring emanates from your cursor. A multi-harmonic osci
 The Nagel quote appears character by character like sonar returning one echo at a time.
 
 Paired with Michael Pollan's album *A World Appears*, which I've been listening to on repeat.
+
+---
+
+[Open the essay](https://verdant-biscuit-8235f9.netlify.app) · [Full project write-up](/projects/what-its-like-to-be-a-bat)

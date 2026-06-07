@@ -27,6 +27,13 @@ A series of self-contained HTML visual guides — each a single file, no depende
 
 **MIND Diet Meal Plans** — [Coming]
 
+## Links
+
+- [Live series](https://robertcedwards.github.io/visual-guides)
+- [GitHub](https://github.com/robertcedwards/visual-guides)
+- [Cotton quality post](/posts/visual-guide-cotton-quality)
+- [Gut fiber drink post](/posts/visual-guide-gut-fiber-drink)
+
 ## Design Principles
 
 Every guide follows the same constraints: single HTML file, no CDN dependencies, works offline. The goal is something you can save, share, and read anywhere — closer to a well-designed zine than a web app.

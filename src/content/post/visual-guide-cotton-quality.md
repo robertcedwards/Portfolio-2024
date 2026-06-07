@@ -13,3 +13,7 @@ Eight sections: fiber, yarn, knit structure, dye, shrinkage and finishing, patte
 Key things I learned making it: "Egyptian cotton" is almost always a lie, "ring spun" is meaningless marketing, silicone softener masks poor fiber, and dry-clean-only is usually a red flag not a feature.
 
 Single file, no CDN, works offline. The format I keep coming back to for reference material.
+
+---
+
+[Open the guide](https://robertcedwards.github.io/visual-guides/cotton-quality-guide.html) · [GitHub](https://github.com/robertcedwards/visual-guides) · [Full series](/projects/visual-guides)

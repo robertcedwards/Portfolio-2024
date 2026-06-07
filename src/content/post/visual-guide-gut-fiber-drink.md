@@ -13,3 +13,7 @@ It's part of a growing series of visual guides I've been making for things I act
 This one covers the full stack — prebiotic fiber, probiotic strains, timing, what competes with what, and the recipe itself. The nav syncs across all the guides in the series now: Cotton · Gut Shake · Running · Sleep · HIT · Citrulline · Visceral Fat · Electrolytes · Food Order.
 
 The format keeps proving itself. You understand something differently when you have to design how to explain it.
+
+---
+
+[Open the guide](https://robertcedwards.github.io/visual-guides/gut-drink-guide.html) · [GitHub](https://github.com/robertcedwards/visual-guides) · [Full series](/projects/visual-guides)

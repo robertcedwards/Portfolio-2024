@@ -34,3 +34,8 @@ A single-file interactive HTML guide telling the full story of competitive birdi
 ## Details
 
 Throughout: animated birds fly across the screen in the background, a gold progress bar tracks reading position, and every section animates on scroll. The epilogue traces the evolution from musket to Merlin AI — and lays out the concept for a modern birding app built on this history.
+
+## Links
+
+- [Live guide](https://cheery-baklava-27bb2f.netlify.app)
+- [Build post](/posts/built-birding-history)

@@ -77,3 +77,7 @@ There was a second, simpler gremlin too. The templates had introduced filenames 
 The result is a quiet, glare-free place to write, running on a device I already owned, built entirely from what that device told me it could do. Sometimes the best thing a browser can give you is an honest answer about its own limits.
 
 *Built with a lot of help from a coding agent that did the probing, the bug-hunting, and most of the typing — while I made the calls on what to build.*
+
+---
+
+[GitHub — eink-notepad](https://github.com/robertcedwards/eink-notepad)

@@ -36,6 +36,13 @@ Highlights include **Biscuit**, which runs a WiFi scanner on the e-ink screen �
 
 The device runs Claude sessions natively. The firmware tracks session state — the charging clock condition checks `_onUsb && RTC synced && no active sessions` — which required a guard (`&& !pom.active`) to prevent the clock from silently overwriting the Pomodoro countdown during USB-connected debugging.
 
+## Links
+
+- [SUMI firmware](https://github.com/robertcedwards/SUMI) — full custom firmware for the X4 Xteink
+- [sumi.page](https://sumi.page) — companion web tools (converter, flasher, file transfer)
+- [Build post](/posts/x4-ereader-firmware)
+- [Lua Pomodoro post](/posts/lua-pomodoro-eink)
+
 ## Why This Project
 
 E-ink is an underexplored computing surface. It's readable in full sunlight, draws almost no power, and has a tactile presence that screens don't. Getting Lua apps and Claude running on a $70 reader is a proof of concept for a different kind of portable computing.
